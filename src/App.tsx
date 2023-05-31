@@ -1,7 +1,7 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Box, Container, AppBar, Grid } from "@mui/material";
+import RandomCatForm from "./RandomCatForm";
+import RandomCatList from "./RandomCatList";
 
 function App() {
   return (
@@ -10,12 +10,16 @@ function App() {
       <AppBar> </AppBar>
       <Grid container>
         <Grid item xs={12}>
-          <div>Form here</div>
+          <div>
+            <RandomCatForm />
+          </div>
         </Grid>
       </Grid>
       <Grid container>
         <Grid item xs={12}>
-          <div>List here</div>
+          <div>
+            <RandomCatList />
+          </div>
         </Grid>
       </Grid>
     </Box>
